@@ -1,0 +1,10 @@
+.form-control{
+  background-color: #f4f6f7;
+}
+.col-md-8{
+  background-color: #ffffff8c;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(156, 156, 156, 0.2);
+  padding: 80px 20px;
+}

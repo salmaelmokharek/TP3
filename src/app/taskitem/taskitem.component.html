@@ -1,0 +1,48 @@
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <h3>name</h3>
+          <div class="card radius-10 border-start border-0 border-3 border-info">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div>
+                  <table>
+                    <tr>
+                      <th><i class="mx-2">Reference</i></th>
+                      <td>{{ task.id}}<td>
+                    </tr>
+                    <tr>
+                      <th><i class="mx-2">Task Name</i></th>
+                      <td class="mx-5">{{ task.name}}</td>
+                    </tr>
+                    <tr>
+                      <th ><i class="mx-2">Priority</i></th>
+                      <td class="mx-5">{{ task.priority}}</td>
+                    </tr>
+                    <tr class="mx-2">
+                      <th><i class="mx-2">Date</i></th>
+                      <td>{{ task.date}}</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="widgets-icons-2 rounded-circle bg-gradient-scooter text-white ms-auto">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+              </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary"><a data-mdb-toggle="tooltip" title="Edit" (click)="AlertU()" > <i class="fa fa-pencil-square-o text-white" ></i></a>
+        </button>
+        <button class="btn btn-danger"><a  data-mdb-toggle="tooltip" title="Remove" (click)="AlertR()"> <i class="fa fa-trash text-warning"></i></a>
+       </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

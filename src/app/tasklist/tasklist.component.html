@@ -1,0 +1,70 @@
+<app-taskitem></app-taskitem>
+<section class="vh-100 gradient-custom-2" >
+  <div class=" py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-12 col-xl-10">
+        <div class="card mask-custom">
+          <div class="card-body p-4 text-white">
+
+            <div class="text-center pt-3 pb-2">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
+                alt="Check" width="60">
+              <h2 class="my-4">Task List</h2>
+            </div>
+
+            <table class="table text-white mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Task Name</th>
+                  <th scope="col">Date</th>
+                  <!-- <th scope="col">Priority</th> -->
+                  <th scope="col">State</th>
+                  <th scope="col">Details</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+
+              <tbody *ngFor="let task of tasks">
+                <tr class="fw-normal">
+                  <td>
+                    <span class="ms-2"> {{task.name}}</span>
+                  </td>
+                  <td class="align-middle">
+                    <span >{{task.date}}</span>
+                  </td>
+                  <!-- <td class="align-middle">
+                    <h6 class="mb-0"><span class="badge bg-danger">{{task.priority}}</span></h6>
+                  </td> -->
+                  <td class="align-middle">
+                    <span >{{task.state}}</span>
+                  </td>
+                  <td class="align-middle">
+                    <button type="button" class="btn btn-outline-secondary" (click)="onSelect(task)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     Read more
+                    </button>
+                  </td>
+                  <td class="align-middle">
+                    <button class="btn btn-success"><a data-mdb-toggle="tooltip" title="done" (click)="AlertD()" > <i class="fa fa-check-square-o text-white" ></i></a></button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<ng-container *ngFor="let x of tasks">
+   <app-taskitem  [task]="x" (view)="onSelect($event)" ></app-taskitem>
+</ng-container>
+
+
+
+
+
+
+

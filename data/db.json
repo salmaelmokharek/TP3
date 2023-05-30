@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    {
+      "id":1,
+      "name": "Complete project proposal",
+      "date": "2023-03-27",
+      "priority": "Medium",
+      "state": "Incomplete",
+      "description": "Finish writing and editing the proposal document for the upcoming project deadline."
+    },
+    {
+      "id":2,
+      "name": "Attend team meeting",
+      "date": "2023-03-29",
+      "priority": "Low",
+      "state": "Incomplete",
+      "description": "Attend the weekly team meeting to discuss project progress and updates."
+    },
+    {
+      "id":3,
+      "name": "Submit monthly report",
+      "date": "2023-04-05",
+      "priority": "Medium",
+      "state": "Incomplete",
+      "description": "Prepare and submit the monthly report to the management team with the project status, budget, and performance metrics."
+    },
+  {
+    "id":4,
+    "name": "Wake up for suhoor",
+    "date": "2023-04-13",
+    "priority": "High",
+    "state": "Incomplete",
+    "description": "Wake up early in the morning to eat a pre-dawn meal before starting the fast for the day."
+  },
+  {
+    "id":5,
+    "name": "Read Quran",
+    "date": "2023-04-15",
+    "priority": "High",
+    "state": "Incomplete",
+    "description": "Read a portion of the Quran every day during Ramadan to increase your knowledge and understanding of the religion."
+  },
+  {
+    "id":6,
+    "name": "Give charity",
+    "date": "2023-04-18",
+    "priority": "High",
+    "state": "Incomplete",
+    "description": "Make a donation to a charitable cause during Ramadan to help those in need."
+  },
+  {
+    "id":7,
+    "name": "Attend Tarawih prayers",
+    "date": "2023-04-23",
+    "priority": "High",
+    "state": "Incomplete",
+    "description": "Attend the nightly Tarawih prayers at the mosque during Ramadan to strengthen your spiritual connection with Allah."
+  }
+  ]
+
+
+}
